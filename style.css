@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 75%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+#header {
+    width: 70%;
+    height: 150px;
+    margin: 50px 0 30px 0;
+}
+
+#header h1 {
+    font-family: 'Playfair Display', serif;
+    width: 100%;
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#header .drag-set {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#header .drag-set span {
+    width: 5%;
+
+}
+
+#header .drag-set p {
+    width: 95%;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#hero-image {
+    width: 100%;
+    height: 450px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#block {
+    height: 200%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#block-one {
+    height: 100%;
+    width: 75%;
+
+}
+
+.ingredients {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+.ingredients h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.ingredients h3 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 10px 0;
+
+}
+
+.checkset1,
+.checkset2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.checkset1 {
+    height: 20%;
+}
+
+.checkset2 {
+    width: 100%;
+    height: 50%;
+}
+
+.checkset2 .checkbox-container,
+.checkset1 .checkbox-container {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.checkbox-container input {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px 0 0;
+    border: 1px solid #828282;
+    color: #828282;
+}
+
+.checkbox-container label {
+    width: 70%;
+    color: #333333;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.bold {
+    font-weight: 700;
+}
+
+#block-one .instructions {
+    height: 80%;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.instruction-step {
+    display: flex;
+    width: 80%;
+
+
+}
+
+.instruction-step span {
+    width: 36px;
+    height: 36px;
+    background-color: #F2994A;
+    margin-right: 10px;
+    font-family: 'Playfair Display', serif;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 6px;
+
+}
+
+.instruction-step .step-number {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.instruction-step p {
+    width: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.link {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.serving {
+    width: 225px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 #0000001A;
+    border-radius: 12px;
+    position: sticky;
+    top: 100px;
+}
+
+.serv-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    height: 35px;
+}
+
+.serv-box span {
+    width: 28px;
+    height: 28px;
+    font-size: 2rem;
+    color: #4F4F4F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.serv-text {
+    width: 70%;
+}
+
+.serv-box .serv-text h3 {
+    font-weight: 700;
+    font-size: 10px;
+    color: #BDBDBD;
+    text-transform: uppercase;
+}
+
+.serv-box .serv-text h4 {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+}
+
+#orange {
+    color: #F2994A;
+}
+
+.creator {
+    position: fixed;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+    writing-mode: vertical-lr;
+    background-color: #F2994A;
+    padding: 15px 5px;
+    border-radius: 12px;
+    color: #fff;
+
+}
+
+.creator:hover {
+    color: #F2994A;
+    background-color: #4F4F4F;
+
+}
+
+
+
+@media (max-width:600px) {
+    #main {
+        width: 95%;
+        height: 100%;
+        overflow-y: scroll;
+
+    }
+
+    #header {
+        width: 100%;
+        height: 100px;
+        margin: 50px 0 50px 0;
+    }
+
+    #header h1 {
+        font-size: 24px;
+    }
+
+    #header .drag-set p {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    #hero-image {
+        height: 200px;
+    }
+
+    #block {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 400%;
+        width: 100%;
+    }
+
+    .serving {
+        position: relative;
+        width: 100%;
+        top: 0;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 300px;
+        box-shadow: none;
+        height: 150px;
+    }
+
+    .serv-box {
+        width: 111px;
+    }
+
+    .serv-box span {
+        width: 17px;
+        height: 17px;
+        font-size: 1.5rem;
+    }
+
+    .serv-box .serv-text h3 {
+        font-size: 8px;
+
+    }
+
+    .serv-box .serv-text h4 {
+        font-size: 10px;
+    }
+
+    #serv-special {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #serv-special .serv-text {
+        width: 20%;
+    }
+
+    #block-one {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ingredients {
+        height: 30%;
+        padding: 30px 0 50px 0;
+    }
+
+    .ingredients h1 {
+        font-size: 18px;
+    }
+
+    .ingredients h3 {
+        font-size: 16px;
+    }
+
+    .checkbox-container label {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .instructions {
+        height: 80%;
+        padding-top: 30px;
+
+    }
+
+    .instruction-step {
+        width: 95%;
+    }
+
+    .instruction-step p {
+        font-size: 14px;
+    }
+
+    .link {
+        width: 100%;
+        font-size: 12px;
+        text-align: center
+    }
+
+    .creator {
+        display: none;
+    }
+}
